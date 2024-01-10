@@ -1,5 +1,5 @@
 # epicstars test__task 2
-Дата: 5 грудня 2023 р
+Дата: 1 грудня 2023 р
 
 Цей веб-сайт є моїм другим тестовим завданням в тій же компанії. У цьому проекті немає анімацій, та також відсутній адаптивний дизайн. Тем не менш, сайт був розміщений на хостингу для легкості доступу.
 
@@ -10,7 +10,7 @@ HTML/CSS/JS: Основні технології, використані під 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 epicstars test__task 2
-Date: December 5, 2023
+Date: December 1, 2023
 
 This website represents my second test assignment in the same company. In this project, there are no animations, and adaptive design is also not implemented. Nevertheless, the site has been uploaded to hosting for easy access.
 
