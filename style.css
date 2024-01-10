@@ -1,0 +1,646 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300&family=Poppins:wght@500;600;700&display=swap');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+
+
+/* ------------------------- heder ----------------------------- */
+
+header a,
+button {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+.header__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  z-index: 2;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__logo a {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header__language {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  color: white;
+}
+
+.header__language span {
+  margin-right: 5px;
+  color: rgb(195, 195, 195);
+}
+
+.navigation {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__authorizationPanel {
+  display: flex;
+  align-items: center;
+}
+
+.header__authorizationPanel button {
+  padding: 18px 30px;
+}
+
+.signIn {
+  background-color: transparent;
+}
+
+.registration {
+  background-color: #789DD8;
+  font-size: .9rem;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px 0 #779DD8;
+}
+
+
+/* ------------------- epicstars section ------------------- */
+
+
+.epicstars {
+  background: linear-gradient(90deg, #390696 2.64%, #8C129A 100%);
+  position: relative;
+}
+
+.epicstars__container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 170px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.epicstars__info {
+  width: 800px
+}
+
+.epicstars__title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.epicstars__title span {
+  text-decoration: underline;
+}
+
+.epicstars__text {
+  width: 600px;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 30px 0;
+  line-height: 30px;
+  color: white;
+}
+
+.epicstars__button {
+  padding: 18px 20px;
+  width: 150px;
+  background-color: #789DD8;
+  font-size: .9rem;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px 0 #779DD8;
+}
+
+.epicstars__img {
+  top: 150px;
+  right: 100px;
+  position: absolute;
+  width: 500px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.wave--top {
+  position: absolute;
+  top: -4px;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.wave--zIndex {
+  z-index: -1;
+}
+
+/* ------------------------------------------- advantages section ---------------------------------------- */
+
+
+.advantages__container {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 360px;
+  border-radius: 15px;
+  box-shadow: 8px 5px 25px rgba(0, 0, 0, 0.147);
+  color: #333;
+  padding: 40px;
+}
+
+.item__icon {
+  margin-bottom: 20px;
+}
+
+.item__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.item__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 22.4px;
+  margin: 20px 0;
+}
+
+.item__link a {
+  color: #1074D8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 25.2px;
+}
+
+
+/* ----------------------------------------- aboutUs section ------------------------------------------ */
+
+.aboutUs {
+  background-color: #F6F8FD;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutUs__container {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutUs__info {
+  width: 550px;
+}
+
+.aboutUs__title {
+  color: #1074D8;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.aboutUs__subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.aboutUs__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+.meter__info {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+
+.meter__info label {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 16px;
+
+}
+
+.meter__info label span {
+  color: #1074D8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+meter {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+meter::-webkit-meter-bar {
+  background: #E3E3E5;
+  border: none;
+  border-radius: 0;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #1074D8;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: #1074D8;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background: #1074D8;
+}
+
+
+/* ------------------------------------ whyChooseUs section -----------------------------------------  */
+
+
+.whyChooseUs__container {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.whyChooseUs__info {
+  width: 550px;
+}
+
+.whyChooseUs__title {
+  color: #1074D8;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.whyChooseUs__subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.whyChooseUs__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+.whyChooseUs__advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 70px;
+}
+
+.advantages__item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, 0.09);
+}
+
+.advantages__item p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 22.5px;
+}
+
+.advantages__item img {
+  margin-right: 10px;
+}
+
+
+/* --------------------------------------- itProfessionals section ---------------------------------------------------- */
+
+.itProfessionals {
+  background-color: #F6F8FD;
+  position: relative;
+  z-index: 2;
+}
+
+.itProfessionals__container {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #1074D8;
+}
+
+.itProfessionals__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.itProfessionals__row {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itProfessionals__item {
+  display: flex;
+}
+
+.itProfessionals__item img {
+  margin-right: 20px;
+}
+
+.item__text p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.item__text span {
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+
+
+/* --------------------------------------- itCareers section ---------------------------------------------------- */
+
+
+.itCareers__container {
+  padding: 100px 0 200px;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itCareers__title {
+  color: #1074D8;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.itCareers__subtitle {
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 40px 0;
+}
+
+.itCareers__block {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 200px;
+}
+
+.itCareers__link {
+  padding: 20px;
+}
+
+.itCareers__link a {
+  color: #1074D8;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+
+/* --------------------------------------- footer ---------------------------------------------------- */
+
+.footer {
+  background: linear-gradient(90deg, #390696 2.64%, #8C129A 100%);
+  position: relative;
+  z-index: 2;
+}
+
+.footer__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  z-index: 2;
+
+}
+
+.footer__img img {
+  width: 90%;
+}
+
+.footer__info {}
+
+.footer__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.footer__subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 20px 0 40px 0;
+}
+
+.footer__form {
+  width: 250px;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__container input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: #1074D8;
+  width: 150px;
+}
+
+
+.g-recaptcha {}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 16px;
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__row">
+        <div class="header__logo">
+          <a href="#">Logo</a>
+        </div>
+        <div class="header__language">
+          <span>ENG | </span>
+          <p> RU</p>
+        </div>
+        <nav class="header__nav">
+          <ul class="navigation">
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Каталог блогеров</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__authorizationPanel">
+          <button class="signIn">
+            Войти
+          </button>
+
+          <button class="registration">
+            РЕГИСТРАЦИЯ
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="epicstars">
+        <div class="epicstars__container">
+
+          <div class="epicstars__info">
+            <h1 class="epicstars__title">
+              EPICSTARS — платформа,
+              объединяющая <span>рекламодателей</span>
+              и <span>блогеров</span>
+            </h1>
+
+            <p class="epicstars__text">
+              Помогаем брендам и компаниям транслировать свои маркетинговые активности через лидеров мнений <br>
+              и блогеров
+            </p>
+
+            <button class="epicstars__button">
+              давайте начнем!
+            </button>
+          </div>
+
+          <div class="epicstars__img">
+            <img src="./img/EPICSTARS/11 1.png" alt="people">
+          </div>
+
+        </div>
+        <svg class="wave" width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+          <defs>
+            <path id="wavepath" d="M 0 2000 0 500 Q 150 386 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+          </defs>
+          <g >
+            <use xlink:href="#wavepath" y="248" fill="#ffffff">
+            </use>
+          </g>
+        </svg>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__container">
+          <div class="advantages__block">
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/Internet marketing.svg" alt="marketing">
+              </div>
+
+              <h2 class="item__title">
+                Интернет маркетинг
+              </h2>
+
+              <p class="item__text">
+                Опытные маркетологи компании Skyweb
+                занимаются построением эффективных
+                интернет маркетинг стратегий.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/WEB developing.svg" alt="developing">
+              </div>
+
+              <h2 class="item__title">
+                Веб Разработка
+              </h2>
+
+              <p class="item__text">
+                В Skyweb вы можете заказать разработку
+                сайта согласно предоставленному
+                техническому заданию.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/SEO optimization.svg" alt="SEO optimization">
+              </div>
+
+              <h2 class="item__title">
+                SEO Оптимизация
+              </h2>
+
+              <p class="item__text">
+                Команда профессионалов выполняет
+                комплексный анализ сайта и
+                оптимиз ирует SEO показатели.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/Developping app.svg" alt="Developping app">
+              </div>
+
+              <h2 class="item__title">
+                Разработка Приложений
+              </h2>
+
+              <p class="item__text">
+                Мы делаем приложения для мобильных
+                устройств с последующей поддержкой при
+                релизе в маркетплейсы.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/Site boost.svg" alt="Site boost">
+              </div>
+
+              <h2 class="item__title">
+                Ускорение Сайта
+              </h2>
+
+              <p class="item__text">
+                Мы знаем, как ускорить ваш сайт.
+                Разработчики увеличивают скорость
+                загрузки и делают это качественно.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__icon">
+                <img src="./img/advantages/SEO copyrighting.svg" alt="SEO copyrighting">
+              </div>
+
+              <h2 class="item__title">
+                SEO Копирайтинг
+              </h2>
+
+              <p class="item__text">
+                Большая команда копирайтеров в
+                короткие сроки пишут уникльные SEO
+                тексты для сайта с ключевыми словами.
+              </p>
+
+              <div class="item__link">
+                <a href="#">Узнать больше</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutUs">
+        <svg class="wave wave--top" width="100%" height="30%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+          <defs>
+            <path id="wavepath" d="M 0 2000 0 500 Q 148 393 296 500 t 296 0 296 0 296 0 296 0 296 0  v1000 z" />
+          </defs>
+          <g >
+            <use xlink:href="#wavepath" y="259" fill="#ffffff">
+            </use>
+          </g>
+        </svg>
+        <div class="aboutUs__container">
+          <div class="aboutUs__img">
+            <img src="./img/aboutUs/14 1.png" alt="people">
+          </div>
+
+          <div class="aboutUs__info">
+            <h2 class="aboutUs__title">
+              О нашей компании
+            </h2>
+            <h3 class="aboutUs__subtitle">
+              Наша задача – Обеспечить бизнес
+              грамотной системой маркетинга
+            </h3>
+
+            <p class="aboutUs__text">
+              Компания Skyweb предоставляет услуги профессиональных интернет
+              маркетологов клиентам по всему миру. Среди наиболее востребованных
+              услуг, нацеленных на развитие бизнеса, находятся следующие:
+            </p>
+
+            <div class="aboutUs__meterBlock">
+              <div class="meter__item">
+                <div class="meter__info">
+                  <label>Веб разработка</label>
+                  <label> <span>90%</span> </label>
+                </div>
+
+                <meter value="90" min="0" max="100">90%</meter>
+              </div>
+
+              <div class="meter__item">
+                <div class="meter__info">
+                  <label>SEO Оптимизация</label>
+                  <label> <span>85%</span> </label>
+                </div>
+                <meter value="85" min="0" max="100">85%</meter>
+              </div>
+
+              <div class="meter__item">
+
+                <div class="meter__info">
+                  <label>Интернет Маркетинг</label>
+                  <label><span>70%</span></label>
+                </div>
+                <meter value="70" min="0" max="100">70%</meter>
+              </div>
+
+              <div class="meter__item">
+                <div class="meter__info">
+                  <label>Мобильная разработка</label>
+                  <label><span>40%</span></label>
+                </div>
+                <meter value="40" min="0" max="100">40%</meter>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <svg class="wave wave--zIndex" width="100%" height="30%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+          <defs>
+            <path id="wavepath" d="M 0 2000 0 500 Q 148 393 296 500 t 296 0 296 0 296 0 296 0 296 0  v1000 z" />
+          </defs>
+          <g >
+            <use xlink:href="#wavepath" y="259" fill="#ffffff">
+            </use>
+          </g>
+        </svg>
+      </section>
+
+      <section class="whyChooseUs">
+        <div class="whyChooseUs__container">
+          <div class="whyChooseUs__info">
+            <h2 class="whyChooseUs__title">
+              Почему выбирают нас?
+            </h2>
+            <h3 class="whyChooseUs__subtitle">
+              Продвигайте свой бренд в интернете с
+              современным IT решениями
+            </h3>
+            <p class="whyChooseUs__text">
+              Опытная веб студия Skyweb несёт полную ответсвенность за
+              предоставляемые услуги и гарантирует следующие преимущества:
+            </p>
+
+            <div class="whyChooseUs__advantages">
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/whyChooseUs/icon-park-outline_arrow-up.svg" alt="arrow">
+                <p>Приятные сотрудники</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="whyChooseUs__img">
+            <img src="./img/whyChooseUs/12 290887.png" alt="people">
+          </div>
+        </div>
+      </section>
+
+      <section class="itProfessionals">
+        <svg class="wave wave--top" width="100%" height="80%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+          <defs>
+            <path id="wavepath" d="M 0 2000 0 500 Q 148 393 296 500 t 296 0 296 0 296 0 296 0 296 0  v1000 z" />
+          </defs>
+          <g >
+            <use xlink:href="#wavepath" y="259" fill="#ffffff">
+            </use>
+          </g>
+        </svg>
+        <div class="itProfessionals__container">
+          <h2 class="itProfessionals__title">
+            Более 6 лет опыта в сфере IT
+          </h2>
+          <div class="itProfessionals__row">
+
+            <div class="itProfessionals__item">
+              <img src="./img/itProfessionals/icon 1.svg" alt="icon">
+              <div class="item__text">
+                <span>6+</span>
+                <p>Лет в разработке</p>
+              </div>
+            </div>
+
+            <div class="itProfessionals__item">
+              <img src="./img/itProfessionals/icon 2.svg" alt="icon">
+              <div class="item__text">
+                <span>150+</span>
+                <p>Выполненных проектов</p>
+              </div>
+            </div>
+
+            <div class="itProfessionals__item">
+              <img src="./img/itProfessionals/icon 3.svg" alt="icon">
+              <div class="item__text">
+                <span>200+</span>
+                <p>Довольных клиентов</p>
+              </div>
+            </div>
+
+            <div class="itProfessionals__item">
+              <img src="./img/itProfessionals/icon 4.svg" alt="icon">
+              <div class="item__text">
+                <span>40+</span>
+                <p>Сотрудников</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <svg class="wave wave--zIndex" width="100%" height="80%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+          <defs>
+            <path id="wavepath" d="M 0 2000 0 500 Q 148 393 296 500 t 296 0 296 0 296 0 296 0 296 0  v1000 z" />
+          </defs>
+          <g >
+            <use xlink:href="#wavepath" y="259" fill="#ffffff">
+            </use>
+          </g>
+        </svg>
+      </section>
+
+      <section class="itCareers">
+        <div class="itCareers__container">
+          <h2 class="itCareers__title">
+            Карьера в IT
+          </h2>
+          <h3 class="itCareers__subtitle">
+            Вступайте в нашу команду
+          </h3>
+
+          <div class="itCareers__block">
+            <div class="itCareers__link">
+              <a href="#">Веб разработчик</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">SEO копирайтер</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">Менеджер компании</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">SEO специалист</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">Графический дизайнер</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">Тестировщик решений</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">Интернет маркетолог</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">UX/UI дизайнер</a>
+            </div>
+
+            <div class="itCareers__link">
+              <a href="#">Другая деятельность</a>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <svg class="wave wave--top" width="100%" height="85%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+      <defs>
+        <path id="wavepath" d="M 0 2000 0 500 Q 150 386 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z" />
+      </defs>
+      <g >
+        <use xlink:href="#wavepath" y="248" fill="#ffffff">
+        </use>
+      </g>
+    </svg>
+    <div class="footer__container">
+      <div class="footer__img">
+        <img src="./img/footer/17__2_-removebg-preview 1.png" alt="people">
+      </div>
+      <div class="footer__info">
+        <h2 class="footer__title">
+          Свяжитесь с нами
+        </h2>
+        <h3 class="footer__subtitle">
+          Оставьте заявку на обратную связь
+        </h3>
+        <div class="footer__form">
+          <form>
+            <div class="input__container">
+            <input type="text" id="name" class="input" name="name" placeholder="Ваше имя">
+            <input type="tel" id="phone" class="input" placeholder="Номер телефона">
+            </div>
+            <div class="g-recaptcha" data-sitekey="6Lc7oCEpAAAAACgIwM9WoxvKj_bDOJaktoBzCZpd"></div>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+       <small>
+      Copyright 2019-2022 © Skyweb Co. Все права защищены.
+    </small>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
